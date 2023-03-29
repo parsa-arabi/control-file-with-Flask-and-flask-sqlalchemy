@@ -1,0 +1,25 @@
+{%  extends 'base.html'%}
+{% block content %}
+<br><br><br>
+<div class="col-2"></div>
+<div class="col-8 border">
+  <h1 align="center">ثبت نام</h1>
+  <form action="/register" method="post" enctype="multipart/form-data">
+    <br><br>
+    <h3 align="right">: نام کاربری </h3>
+    <input type="text" name="username" class="ipt" placeholder="Username" required>
+    <br><br><br><h3 align="right">: رمز</h3>
+    <input type="password" name="password" class="ipt" placeholder="Password" required>
+    <br><br><br><h3 align="right">تکرار رمز</h3>
+    <input type="password" name="re_password" class="ipt" placeholder="Re password" required>
+    <br><br><br><h3 align="right">عکس نمایه :</h3>
+    <input type="file" name="img" class="ipt" accept="image/*">
+    <br><br>
+    <center><button type="submit" class="btn btn-dark">تایید</button>
+      <a href="/sign_in" class="btn btn-dark btn-mar">ورود</a></center>
+  </form>
+  <br><br>
+</div>
+<br><br><br>
+<div class="col-2"></div>
+{% endblock %}

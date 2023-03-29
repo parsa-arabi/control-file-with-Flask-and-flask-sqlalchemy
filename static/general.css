@@ -1,0 +1,48 @@
+body{
+    font-family:"Tahoma";
+}
+#flash {
+    font-size: 1.5em;
+    color:black;
+}
+a{
+    font-size: 1.3em;
+}
+footer{
+    background-color: rgba(255,149,38,0.88);
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    width: 100%;
+}
+.menu-size{
+    font-size:1.7em;
+}
+.ipt{
+    width: 100%;
+}
+.border{
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.border2{
+    border:3px solid black;
+    border-radius: 5px;
+}
+.btn-mar{
+    margin-left:5px;
+}
+#first-pad{
+    padding:30px 50px;
+}
+.pad{
+    padding:10px;
+}
+.mar{
+    margin:10px;
+}
+#profile_img{
+    width: 200px;
+    height: 200px;
+    border:3px solid black;
+}

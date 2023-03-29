@@ -1,0 +1,32 @@
+{%  extends 'base.html'%}
+{% block content %}
+<br><br><br>
+<div class="col-md-1 col-xs-1 col-lg-1 col-sm-1"></div>
+<div class="col-md-10 col-xs-10 col-lg-10 col-sm-10">
+    <center><a href="/new" class="btn btn-dark">اضافه کردن فایل جدید</a></center>
+    <br>
+    {% for i in filename: %}
+    {% if i.author.username == name %}
+    <br>
+    <div class="border">
+        <div class="pad">
+            <br>
+            <p>{{i.filename}}
+            <center>
+                <a href="/static/Files/{{i.url}}" class="btn btn-outline-light border"><img src="/static/icons/download.svg" width="30" height="30"></a>
+                <a href="{{url_for('delete',post_id=i.id, url=i.url)}}" class="btn btn-outline-light border"><img src="/static/icons/trash3.svg" width="30" height="30"></a>
+            </center>
+            </p>
+        </div>
+        <br>
+    </div>
+    <br>
+    {% endif %}
+    {% endfor %}
+    <br>
+    <h2 class="border pad" align="center">فایل بیشتری وجود ندارد</h2>
+</div>
+<br><br><br>
+<div class="col-md-1 col-xs-1 col-lg-1 col-sm-1"></div>
+
+{% endblock %}

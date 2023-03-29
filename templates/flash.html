@@ -1,0 +1,10 @@
+{%with massages=get_flashed_messages(with_categories=true)%}
+{%if massages%}
+{%for category,massage in massages%}
+<center>
+    <p class="alert alert-{{category}}" id="flash">{{massage}}</p>
+    <br>
+</center>
+{%endfor%}
+{%endif%}
+{%endwith%}

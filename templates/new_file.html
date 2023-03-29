@@ -1,0 +1,20 @@
+{%  extends 'base.html'%}
+{% block content %}
+<br><br><br>
+<div class="col-2"></div>
+<div class="col-8 border">
+    <div class="pad">
+        <h1 align="center">اضافه کردن فایل</h1>
+        <hr>
+        <form action="/new_file" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <br><br>
+            <center>
+                <button type="submit" class="btn btn-dark">ارسال</button>
+            </center>
+        </form>
+    </div>
+</div>
+<br><br><br>
+<div class="col-2"></div>
+{% endblock %}
